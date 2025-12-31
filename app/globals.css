@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-family-general-sans: 'General Sans', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +24,90 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideUpFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpFromBottomClouds {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+}
+
+@keyframes fadeInTheContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes birdFadeOut {
+  from {
+    /* opacity: 1; */
+  }
+  to {
+    opacity: 0;
+  }
+}
+.animate-bird-fade-out {
+  animation: birdFadeOut .5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-in-the-content {
+  animation: fadeInTheContent .3s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.animate-slide-up {
+  animation: slideUpFromBottom 2s ease-out forwards;
+}
+
+.animate-slide-up-clouds {
+  animation: slideUpFromBottomClouds 1.7s ease-out forwards;
+  /* animation-delay: 0; */
+}
+
+.fly-bird-from-right-to-left {
+  animation: flyBirdFromRightToLeft 3.5s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation-delay: 3s;
+}
+
+.fly-bird-from-left-to-right {
+  animation: flyBirdFromLeftToRight 3.5s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation-delay: 3s;
+}
+
+@keyframes flyBirdFromRightToLeft {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(calc(-100vw - 300px)) translateY(-200px);
+  }
+}
+
+@keyframes flyBirdFromLeftToRight {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(calc(100vw + 300px)) translateY(-200px);
+  }
 }
