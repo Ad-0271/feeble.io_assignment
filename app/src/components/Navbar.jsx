@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="relative text-[14px] md:text-[16px] font-medium px-[14px] md:px-[18px] py-[8px] md:py-[11px] rounded-[50px] text-white leading-[120%] bg-[#007AFF] cursor-pointer overflow-hidden group hover:bg-white hover:shadow-[2px_2px_12px_0px_#00000028] transition-all duration-300 ease-in-out">
         <div className="absolute top-0 right-0 w-[150%] h-full bg-white rounded-[50px] transform translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></div>
         <span className="relative z-10 group-hover:text-[#007AFF] transition-colors duration-700">
-          <span className="hidden md:inline">Contact Saless</span>
+          <span className="hidden md:inline">Contact Sales</span>
           <span className="md:hidden">Contact</span>
         </span>
       </div>

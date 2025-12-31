@@ -48,7 +48,7 @@ export default function HeroSectionAnimations() {
           alt="bird-b2"
           width={43}
           height={14}
-          className="z-5 absolute top-[30.4%] left-[25.78%] animate-bird-fade-out "
+          className="z-5 absolute top-[329.02px] left-[25.78%] animate-bird-fade-out "
         ></Image>
         <Image
           src={"bird-t1.svg"}
@@ -62,7 +62,7 @@ export default function HeroSectionAnimations() {
           alt="bird-b4"
           width={43}
           height={14}
-          className="z-5 absolute top-[43%] right-[22.44%] animate-bird-fade-out "
+          className="z-5 absolute top-[465px] right-[22.44%] animate-bird-fade-out "
         ></Image>
 
         <Image
