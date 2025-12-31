@@ -1,3 +1,6 @@
+Hey there, I've build this assignment using Next.js and have used tailwind css for styling and animations. Please refer below instructions to run the code locally on your machine once you cloned the repo.
+Deployed link: https://feeble-io-assignment.vercel.app/
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
